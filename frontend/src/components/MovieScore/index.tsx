@@ -1,5 +1,4 @@
 import MovieStars from 'components/MovieStars';
-import { type } from 'os';
 import './styles.css';
 
 type Props = {
@@ -7,7 +6,7 @@ type Props = {
     count: number;
 }
 
-function MovieScore( {score, count} : Props){
+function MovieScore( { score, count } : Props){
 
 
     return(

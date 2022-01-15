@@ -33,7 +33,8 @@ function getFills(score: number) {
     return fills;
   }
 
-  function Star({fill } : StarProps){
+
+  function Star({ fill } : StarProps){
     if(fill === 0){
       return <StarEmpty />
     } else if( fill === 1){
@@ -42,6 +43,7 @@ function getFills(score: number) {
       return <StarHalf />
     }
   }
+
 
 function MovieStars({ score } : Props){
 

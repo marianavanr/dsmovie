@@ -1,5 +1,4 @@
 import MovieScore from "components/MovieScore";
-import { type } from "os";
 import { Link } from "react-router-dom";
 import { Movie } from "types/movie";
 
@@ -8,7 +7,7 @@ type Props = {
 }
 
 
-function MovieCard ( { movie }: Props) {
+function MovieCard ( { movie } : Props) {
 
     return (
         <div>
@@ -17,7 +16,7 @@ function MovieCard ( { movie }: Props) {
                 <h3>{movie.title}</h3>
                 <MovieScore count = {movie.count} score = {movie.score} />
 
-                <Link to={'/form/${movie.id}'}>
+                <Link to={`/form/${movie.id}`}>
                     <div className="btn btn-primary dsmovie-btn">Avaliar</div>
                 </Link>
             </div>
